@@ -1,0 +1,36 @@
+{
+  "name": "property_valuation_mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
+  },
+  "rnpm":{
+    "assets":["./assets/fonts/"]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "es6-symbol": "^3.1.1",
+    "moment": "^2.22.2",
+    "react": "16.4.1",
+    "react-native": "^0.56.0",
+    "react-native-camera": "^1.2.0",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "2.9.0",
+    "react-navigation-material-bottom-tabs": "^0.3.0",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.4.5"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "5.0.2",
+    "jest": "23.5.0",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
